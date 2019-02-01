@@ -6,13 +6,17 @@
   "scripts": {
     "start": "node development.js",
     "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
-    "build":"node production.js",
+    "build": "node production.js",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
+    "crypto-js": "^3.1.9-1",
     "koa-cors": "0.0.16",
+    "sha1": "^1.1.1",
+    "superagent": "^4.1.0",
     "think-cache": "^1.0.0",
     "think-cache-file": "^1.0.8",
     "think-logger3": "^1.0.0",

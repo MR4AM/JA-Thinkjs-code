@@ -1,6 +1,7 @@
 const BaseRest = require('../rest.js');
 
 module.exports = class extends BaseRest {
+    __before(){}
     async test(){
         console.log('请求进来了')
         let obj={

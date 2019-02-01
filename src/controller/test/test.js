@@ -11,10 +11,11 @@ module.exports = class extends Base {
         arr[1] = "地址";
         arr[2] = "手机";
         this.assign('arr', arr);
+        console.log(this,'检测测试接口的this指针')
         return this.success(arr);
     }
     async callbackAction() {
         console.log('callbackAction.....');
         return 'callback';
-      }
+    }
 }
